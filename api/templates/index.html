@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	
+		<div class="col-sm-6 col-sm-offset-3">
+			<form action="{% url 'home' %}" method="post">{% csrf_token %}
+				<div class="input-group">
+					
+				<input type="text" class="form-control" placeholder="Search for...">
+				<span class="input-group-btn">
+						<button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+				</span>
+				</div><!-- /input-group -->
+			</form>
+			<br/><br/>
+				
+				<div class="clearfix"> 
+					<span style="margin-left: 5%">Name</span>
+				    <div class="btn-group inline pull-right"> 
+				      <div class="btn btn-success" id="add">Add</div> 
+				      
+				    </div> 
+				     
+			  </div> 
+
+			  <div class="panel panel-default" id="addForm">
+			  		<div class="panel-body">
+			  			<div class="col-sm-9">
+			  				<form method="post" action="{% url 'home' %}" >{% csrf_token %}
+			  					<div class="input-group">
+		    						{% for field in form %}
+		    							{{ field }}
+		    						{% endfor %}
+		    						<span class="input-group-btn ">
+										<button class="btn btn-success" id="addSkill" type="submit">Submit</button>
+									</span>
+    							</div>
+			  				</form>
+			  				
+			  			</div>
+    					
+  					</div>
+			  </div>
+			
+			
+		</div><!-- /.col-lg-6 -->
+
+		
+
+	
+{% endblock %}
+

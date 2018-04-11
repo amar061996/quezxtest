@@ -1,0 +1,10 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+#addForm{
+	margin-top: 2%;
+	display: none;
+}

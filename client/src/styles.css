@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  #addForm{
+      margin-top: 2%;
+      display: none;
+  }
+
+  .text-item:hover{
+      cursor: pointer;
+  }
+
+  .text-item:hover + .edit{
+    opacity: 1;
+}
+
+.edit{
+	opacity: 0;
+}
+
+.update-skill{
+    display: none;
+}
+
+.glyphicon{
+    color:#C0C0C0;
+    cursor:pointer;
+    
+    
+}
+.glyphicon-large{
+    
+    cursor: pointer;
+    margin-left:20px;
+    font-size:15px !important;
+    
+}
+
+.green{
+    color:green;
+}
+.red{
+    color: red;
+}
+.glyphicon-remove{
+    margin-left: 100px;
+}
